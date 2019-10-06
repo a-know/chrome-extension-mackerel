@@ -1,0 +1,16 @@
+{
+    "name": "mackerel_chrome_extension",
+    "version": "0.1.0",
+    "description": "Chrome Extension for Mackerel (mackerel.io) .",
+    "manifest_version": 2,
+    "browser_action": {
+        "name": "Chrome Extension for Mackerel",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "js": ["popup.js", "system_metrics.js"],
+            "matches": ["https://mackerel.io/*"]
+        }
+    ]
+}
